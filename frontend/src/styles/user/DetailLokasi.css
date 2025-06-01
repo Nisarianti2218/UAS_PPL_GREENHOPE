@@ -1,0 +1,217 @@
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+    overflow-x: hidden;
+    line-height: 1.75;
+    background-color: #f9f9f9;
+}
+
+/* Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #155719;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    border-bottom: 2px solid #155719;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header content gabungan icon dan teks */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+/* Icon panah */
+.back-arrow {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.header-content:hover .back-arrow {
+    color: #d1fae5;
+}
+
+/* Judul header */
+.header-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+}
+
+/* Full width image */
+.fullwidth-image-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.detail-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Kontainer konten */
+.detail-container {
+    padding: 2rem 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tombol donasi */
+.donasi-btn {
+    display: block;
+    background-color: #155719;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    margin: 0 auto 2.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.donasi-btn:hover {
+    background-color: #0d3a12;
+}
+
+/* Judul section */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+}
+
+/* Grid info */
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.info-box {
+    flex: 1 1 280px;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.info-box h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Statistik donasi */
+.stat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.stat-box {
+    flex: 1 1 180px;
+    background: #f0fdf4;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-sm {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
+}
+
+.stat-value {
+    font-size: 1.75rem;
+    color: #15803d;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    color: #374151;
+    font-size: 1rem;
+}
+
+/* Update proyek */
+.update-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.update-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+
+    .stat-box,
+    .info-box {
+        width: 100%;
+    }
+
+    .donasi-btn {
+        width: 100%;
+    }
+
+    .detail-img {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+}

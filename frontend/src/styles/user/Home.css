@@ -1,0 +1,266 @@
+/* Terapkan font Inter ke semua elemen */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+.headerContainer {
+    background-image: url('../../assets/awal.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Geser ke atas */
+    align-items: flex-start;
+
+    padding-left: 80px;
+    padding-top: 100px;
+    /* Geser ke atas, kamu bisa atur antara 100-140px */
+    padding-right: 40%;
+
+    color: #124B15;
+    text-align: left;
+}
+
+
+.headerContainer h1 {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #124B15;
+    font-family: 'Georgia', serif;
+}
+
+.headerContainer h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #124B15;
+}
+
+.headerContainer p {
+    font-size: 20px;
+    max-width: 450px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.donateButton {
+    background-color: #17571B;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 250px;
+}
+
+.donateButton:hover {
+    background-color: #2e7d32;
+}
+
+/* Section Alasan Berdonasi */
+.reasonsSection {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.reasonsSection h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.reasonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reasonCard {
+    border: 2px solid #17571B;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.reasonCard:hover {
+    transform: scale(1.05);
+}
+
+.reasonCard img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.reasonCard h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.reasonCard p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Section Alur Donasi */
+.alurSection {
+    background-color: #17571B;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.alurSection h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.alurContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.alurItem {
+    width: 180px;
+}
+
+.circle {
+    background-color: white;
+    color: #17571B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Statistik Penghijauan */
+.statistikSection {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.statistikSection h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.statistikContainer {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statItem img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.statItem h3 {
+    font-size: 28px;
+    color: #17571B;
+    margin: 5px 0;
+}
+
+.statItem p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Testimoni */
+.testimoniSection {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimoniSection h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.testimoniContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimoniImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimoniContainer blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    max-width: 500px;
+    text-align: left;
+}
+
+.komentarFormHorizontal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.komentarFormHorizontal input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    outline: none;
+}
+
+.komentarFormHorizontal button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,3 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Nisarianti2218/UAS_PPL_GREENHOPE.git

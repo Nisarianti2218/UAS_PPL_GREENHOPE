@@ -84,3 +84,5 @@ Relasi utama:
 - Platform dikembangkan dengan fokus pada kemudahan penggunaan dan transparansi donasi.
 - Data disimpan dengan aman menggunakan MongoDB.
 - Formulir Google digunakan untuk kemudahan input awal data oleh donatur.
+
+![image](https://github.com/user-attachments/assets/40ff6469-5c3f-4137-9e47-3557879639dc)
